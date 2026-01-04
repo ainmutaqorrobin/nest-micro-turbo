@@ -10,6 +10,13 @@ Run the following command:
 npx create-turbo@latest
 ```
 
+## Redis Docker command
+
+```sh
+docker run --name redis -p 6379:6379 -d redis
+docker exec -it redis redis-cli
+```
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
