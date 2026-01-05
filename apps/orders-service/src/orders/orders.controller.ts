@@ -14,6 +14,6 @@ export class OrdersController {
     console.log('Order Received in Orders Service', order);
 
     this.redisProductService.emit('order.created', order);
-    return { message: 'Order Created', order };
+    return this.redisProductService.send('get_product', {});
   }
 }
